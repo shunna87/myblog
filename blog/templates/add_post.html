@@ -4,12 +4,16 @@
 
 {%  block content %}
 
-<h1> New post </h1>
+<h1> Create a new post </h1>
+<br/>
 
+<div class ="form-group">
 <form method = "POST">
     {%  csrf_token %}
     {{ form.as_p}}
-    <button  class="btn btn-secondary"> Save Me!</button>
 
+    <button  class="btn btn-secondary">Save post</button>
+
+</div>
 
 {%  endblock %}
