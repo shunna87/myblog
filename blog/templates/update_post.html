@@ -3,17 +3,20 @@
 {% block title %} Edit post {% endblock %}
 
 {%  block content %}
+{%  if user.is_authenticated  %}
 
-<h1> Update post </h1>
-<br/>
+   <h1> Update post </h1>
+   <br/>
 
-<div class ="form-group">
-<form method = "POST">
-    {%  csrf_token %}
-    {{ form.as_p}}
+    <div class ="form-group">
+    <form method = "POST">
+       {%  csrf_token %}
+        {{ form.as_p}}
 
     <button  class="btn btn-secondary">Update post</button>
 
-</div>
-
+ </div>
+{%  else %}
+  You can not delete post
+{% endif %}
 {%  endblock %}

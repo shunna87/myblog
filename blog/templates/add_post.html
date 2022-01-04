@@ -4,16 +4,21 @@
 
 {%  block content %}
 
-<h1> Create a new post </h1>
-<br/>
+{%  if user.is_authenticated  %}
 
-<div class ="form-group">
-<form method = "POST">
-    {%  csrf_token %}
-    {{ form.as_p}}
+    <h1> Create a new post </h1>
+    <br/>
 
-    <button  class="btn btn-secondary">Save post</button>
+    <div class ="form-group">
+    <form method = "POST">
+       {%  csrf_token %}
+        {{ form.as_p}}
 
-</div>
+      <button  class="btn btn-secondary">Save post</button>
 
+
+{%  else %}
+   You can not add new post
+{% endif %}
+         </div>
 {%  endblock %}
