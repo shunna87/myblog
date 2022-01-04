@@ -6,7 +6,8 @@
 
 <ul>
 {%  for post in object_list %}
-    <li> <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a> <br/>
+    <li> <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a> <br/>  <small> {{ post.post_date}} </small> <br/> <br/>
+   
      
         {{ post.body }} </li> <hr>
 

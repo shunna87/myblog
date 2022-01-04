@@ -6,7 +6,9 @@
 
 
 <h1> {{ post.title }} </h1>
-</small><a href ="{% url 'update_post' post.pk %}" class="btn btn-outline-secondary"> Edit post </a>
+<small> {{ post.post_date}} </small> <br/> <br/>
+<a href ="{% url 'update_post' post.pk %}" class="btn btn-outline-secondary"> Edit post </a>
+<a href ="{% url 'delete_post' post.pk %}" class="btn btn-outline-danger"> Delete post </a>
 <br/>
 <hr>
 {{ post.body }}
