@@ -6,6 +6,7 @@
 
 
 <h1> {{ post.title }} </h1>
+</small><a href ="{% url 'update_post' post.pk %}" class="btn btn-outline-secondary"> Edit post </a>
 <br/>
 <hr>
 {{ post.body }}
