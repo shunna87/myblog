@@ -23,15 +23,38 @@
               <li class="nav-item">
                 <a class="btn btn-primary" aria-current="page" href="{% url 'home' %}">Home</a>
 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                    {%  if cat_menu  %}
+
+                         {%  for item in cat_menu %}
+
+                         <a class="dropdown-item" href="{% url 'category' item %}"> {{ item }} </a> 
+                         {%  endfor  %}  
+
+                    {%  else  %}
+
+                         <a  href="{% url 'category_list' %}"> Category list  </a> 
+
+                   
+                                        
+                    {% endif %}
+                </li> </li>
+
+                  </ul>
+
+
                 {%  if user.is_authenticated  %}
                  </li>
                  <li class="nav-item">
                 <a class="nav-link" href="{% url 'add_post' %}">New post</a>
                 </li>
 
-               
-
-                  
+                                 
                 {% endif %}
               </li>
 
@@ -48,18 +71,12 @@
               {% endif %}
 
 
-
-
-
-              
+        
 
 
               
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
