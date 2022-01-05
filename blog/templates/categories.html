@@ -1,0 +1,27 @@
+{%  extends 'base.html' %}
+{%  block content %}
+
+{% if category_posts %}
+
+
+<h1> {{ cats }}  </h1>
+
+    <ul>
+    
+    {% for post in category_posts %}
+       <li> <a href="{% url 'article_detail' post.pk %}"> 
+           {{ post.title }}</a> <br/>  <small> {{ post.post_date}} </small> <br/> <br/>
+     
+    
+
+    {% endfor %}
+
+    </ul>
+
+    {%  else  %}
+       <h2> Sorry, this page does not exists </h2>
+    {%  endif %}
+    
+
+{%  endblock %}
+

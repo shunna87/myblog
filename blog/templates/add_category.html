@@ -1,0 +1,24 @@
+{%  extends 'base.html' %}
+
+{% block title %} New category {% endblock %}
+
+{%  block content %}
+
+{%  if user.is_authenticated  %}
+
+    <h1> Create a new category </h1>
+    <br/>
+
+    <div class ="form-group">
+    <form method = "POST">
+       {%  csrf_token %}
+        {{ form.as_p}}
+
+      <button  class="btn btn-secondary">Save category</button>
+
+
+{%  else %}
+   You can not add new category
+{% endif %}
+         </div>
+{%  endblock %}
