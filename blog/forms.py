@@ -13,22 +13,24 @@ for item in choices:
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'author', 'category', 'body')
+        fields = ('title', 'author', 'category', 'body', 'snipped')
 
         widgets = {
             'title': forms.TextInput(attrs= {'class': 'form-control'}),
             'author': forms.TextInput(attrs= {'class': 'form-control', 'value': '', 'id':'elder', 'type': 'hidden'}),
             'category': forms.Select(choices = choice_list, attrs= {'class': 'form-control'}),
             'body': forms.Textarea(attrs= {'class': 'form-control'}),
+            'snipped': forms.TextInput(attrs= {'class': 'form-control'}),
         }
 
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'category', 'body', )
+        fields = ('title', 'category', 'body', 'snipped')
 
         widgets = {
             'title': forms.TextInput(attrs= {'class': 'form-control'}),
             'category': forms.Select(choices = choice_list, attrs= {'class': 'form-control'}),
             'body': forms.Textarea(attrs= {'class': 'form-control'}),
+            'snipped': forms.TextInput(attrs= {'class': 'form-control'}),
         }        

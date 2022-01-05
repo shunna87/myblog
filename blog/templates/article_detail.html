@@ -12,7 +12,7 @@
 <a href ="{% url 'delete_post' post.pk %}" class="btn btn-outline-danger"> Delete post </a>
 <br/>
 <hr>
-{{ post.body }}
+{{ post.body | safe }}
 <br/> <br/>
 
 <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
