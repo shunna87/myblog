@@ -11,15 +11,19 @@
     {% for post in category_posts %}
        <li> <a href="{% url 'article_detail' post.pk %}"> 
            {{ post.title }}</a> <br/>  <small> {{ post.post_date}} </small> <br/> <br/>
+           
      
     
 
     {% endfor %}
-
+    <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
     </ul>
 
     {%  else  %}
        <h2> Sorry, there are no articles in this category yet </h2>
+       <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
+         
+
     {%  endif %}
     
 
