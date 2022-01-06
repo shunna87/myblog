@@ -1,10 +1,41 @@
 body {
   background: #fafafa;
-  color: #333333;
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin: 20px;
   width: 85%;
 }
+
+.navbar {
+
+background-color: grey;
+display: flex;
+margin: 20px;
+text-decoration: none;
+color: #fff;
+
+}
+  .nav-item {
+    margin: 0;
+    padding: 0;
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-right:1px solid #eee;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    text-transform:uppercase;
+    font-weight:bolder;
+    transition:all 0.3s linear;
+    font-size: 18px;
+    }
+
+ .dropdown-item
+ {
+   text-transform:lowercase;
+   font-weight:bolder;
+
+ }
+
 
 .page-header {
     background-color: #C25100;
@@ -68,12 +99,12 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
+    color: #4b8cb3;
     background: none;
-    border-color: #C25100;
+    border-color: #396a87;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: #396a87;
 }

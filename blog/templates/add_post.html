@@ -15,8 +15,9 @@
        {{ form.as_p }}
        {{ form.media }}
        
-
+       <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
       <button  class="btn btn-secondary">Save post</button>
+
      <script> 
         var name = "{{ user.id}}";
         document.getElementById("elder").value 
