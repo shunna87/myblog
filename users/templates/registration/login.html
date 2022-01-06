@@ -5,12 +5,14 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class ="form-group">
-                <legend class = "border-bottom mb-4">  Log in  </legend>
+                <legend class = "border-bottom mb-4">  Welcome back! <br/> Please login to your account.  </legend>
+                 <small> <p class ="p-small p-dark"> Need an account? <br/> We are sorry, that Registration is now closed </p> </small>
                 {{ form.as_p}}
             </fieldset>
             <div class = "form-group">
-                <button class="btn btn-outline-info" type="submit">Login </button>
+                <button class="btn btn-secondary" type="submit">Sign in </button>
             </div>
+
         </form>
 
     </div>
