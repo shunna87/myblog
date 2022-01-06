@@ -108,3 +108,14 @@ h4 {
     color: #FFFFFF;
     background-color: #396a87;
 }
+
+.btn btn-outline-info mb-4 {
+    color: #FFFFFF;
+    background-color: #396a87;
+}
+
+.btn btn-info mb-4 {
+    color: #4b8cb3;
+    background: none;
+    border-color: #396a87;
+}
