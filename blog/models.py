@@ -20,7 +20,7 @@ class Post(models.Model):
     body =  RichTextField(blank = True, null = True, max_length= 7000)
     post_date = models.DateField(auto_now_add= True)
     category = models.CharField(max_length= 255, default = 'China')
-    snipped = models.CharField(max_length= 400)
+    snipped = RichTextField(max_length= 400)
  
 
     def __str__(self):

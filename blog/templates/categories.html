@@ -1,16 +1,17 @@
 {%  extends 'base.html' %}
+{% block title %} Category: {{ cats }}  {% endblock %}
 {%  block content %}
 
 {% if category_posts %}
 
 
-<h1> {{ cats }}  </h1>
+<ul> <h1> {{ cats }}  </h1>   </ul>
 
     <ul>
     
     {% for post in category_posts %}
-       <li> <a href="{% url 'article_detail' post.pk %}"> 
-           {{ post.title }}</a> <br/>  <small> {{ post.post_date}} </small> <br/> <br/>
+       <a href="{% url 'article_detail' post.pk %}"> 
+           {{ post.title }}</a>  <small> {{ post.post_date}} </small> <br/> <br/>
            
      
     
