@@ -42,11 +42,20 @@
                          {%  for item in cat_menu %}
 
                          <a class="dropdown-item" href="{% url 'category' item %}"> {{ item }} </a>
-                         {%  endfor  %}  
+                         {%  endfor  %} 
+                         {%  if user.is_authenticated  %}
+                 
+                
+                <a class="dropdown-item" href="{% url 'add_category' %}">Add new Category</a>
+                
+
+                                 
+                {% endif %}
+                          
 
                     {%  else  %}
 
-                         <a  href="{% url 'category_list' %}"> Category list  </a> 
+                         <a class="dropdown-item" href="{% url 'category_list' %}" > Category list  </a> 
 
                    
                                         
@@ -74,7 +83,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/admin"> Admin</a>
+                <a class="nav-link" href="/admin"> Admin page</a>
                 </li>
 
               {% else %}
@@ -119,18 +128,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 
-  <footer class="site-footer"><ul>
-    <p class="text-muted mb-0 py-2">© 2022 "Այստեղ կլինի ինչ֊որ անուն, բայց ես դեռ չեմ հորինել" All rights reserved.</p>
+  <footer class="site-footer" ><ul>
+   
+    <p class="text-muted mb-0 py-2" allign = "center" >© 2022 "Այստեղ կլինի ինչ֊որ անուն, բայց ես դեռ չեմ հորինել" All rights reserved.</p>
     
 
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="container"></div>
-      <ul class="social-icons">
+      <ul class="social-icons" allign = "center">
         <li><a class="facebook" href="https://www.facebook.com/a.anush.m/" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li><a class="dribbble" href="https://www.instagram.com/shunna_art/" target="_blank"><i class="fa fa-instagram"></i></a></li>
         <li><a class="linkedin" href="https://www.linkedin.com/in/anush-avanesyan-59973453/" target="_blank"><i class="fa fa-linkedin"></i></a></li>   
       </ul>
     </div>
-
+</div>
   </footer>   </ul>
 </html>

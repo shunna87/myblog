@@ -2,6 +2,8 @@
 
 {% block title %} Edit post {% endblock %}
 
+
+
 {%  block content %}
 {%  if user.is_authenticated  %}
 
@@ -14,7 +16,7 @@
        {{ form.media }}
        {{ form.as_p }}
 
-
+     
         <a href="{% url 'article_detail' object.id %}" class="btn btn-secondary"> Back</a>
         <button  class="btn btn-secondary">Update post</button>
 

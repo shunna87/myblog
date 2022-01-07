@@ -17,6 +17,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length= 255)
     author = models.ForeignKey(User, on_delete= models.CASCADE)
+    header_image = models.ImageField(null = True, blank = True,  upload_to ="images/" )
     body =  RichTextField(blank = True, null = True, max_length= 7000)
     post_date = models.DateField(auto_now_add= True)
     category = models.CharField(max_length= 255, default = 'China')
