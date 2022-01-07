@@ -19,6 +19,7 @@
      
         <a href="{% url 'article_detail' object.id %}" class="btn btn-secondary"> Back</a>
         <button  class="btn btn-secondary">Update post</button>
+        <a href ="{% url 'delete_post' post.pk %}" class="btn btn-outline-danger"> Delete post </a>
 
  </div>
 {%  else %}

@@ -1,5 +1,5 @@
 
-from django.urls import path
+from django.urls import path, include
 
 from . import views
 from .views import Post, Category
@@ -17,6 +17,6 @@ urlpatterns = [
    path('add_category/', AddCategoryView.as_view(), name ='add_category'),
    path('category/<str:cats>/', CategoryView, name= 'category'),
    path('category_list/', CategoryListView, name= 'category_list'),
-
+   
 
 ]

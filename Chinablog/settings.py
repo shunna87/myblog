@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sessions',
     'django.contrib.messages',
-
+    'embed_video',
     'blog',
     'crispy_forms',
     'ckeditor',
