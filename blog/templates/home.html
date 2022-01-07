@@ -6,7 +6,7 @@
 
 <ul>
 {%  for post in object_list %}
-    <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a>   <small> {{ post.post_date}} </small>  <br/>
+   <h2>  <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a>  </h2>  <small> {{ post.post_date}} </small>  <br/>
 
     {%  if post.header_image  %}
 

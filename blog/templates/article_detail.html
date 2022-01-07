@@ -6,6 +6,7 @@
 
 
 <h1> {{ post.title }} </h1>
+
 <small> {{ post.post_date}} </small> <br/>
 Category: <a href ="{% url 'category' post.category  %}" >  {{ post.category }} </a> <br/> <br/>
 
@@ -20,6 +21,7 @@ Category: <a href ="{% url 'category' post.category  %}" >  {{ post.category }} 
 
       <img src= "{{ post.header_image.url }}">
 {%  endif %}
+{{ post.snipped |safe }}
 {{ post.body | safe }}
 <br/>
 

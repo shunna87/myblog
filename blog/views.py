@@ -56,7 +56,8 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm 
     template_name = 'update_post.html'
-    
+    #success_url = reverse_lazy('article_detail')
+
 
 class DeletePostView(DeleteView):
     model = Post
