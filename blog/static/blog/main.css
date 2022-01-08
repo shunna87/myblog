@@ -111,7 +111,24 @@ h4 {
 .btn-secondary:visited {
     color: #de76ab;
     background: none;
+    font-weight:bolder;
     border-color: #de76ab;
+}
+
+.btn btn-secondary-a:hover {
+    color: #d95598;
+    font-weight:bolder;
+    border-color: #d95598;
+
+}
+
+.btn-pagination {
+
+    color: #ffffff;
+    font-weight:bolder;
+    border-color: #d95598;
+    background-color: #de76ab;
+
 }
 
 .btn-secondary:hover {
