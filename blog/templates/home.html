@@ -4,13 +4,28 @@
 
 <!--<h1> Posts </h1> -->
 
+     <div class="random-q" style="text-align: right;">
+       <h3>  Quote of the day: </h3>
+<!--Just testing--->
+
+            <h1> Այստեղ մի օր կլինի <a href="category/Chengyu/"> Random quote </a> </h1>
+           {%  for item in cat_menu_list %}
+
+              <a  href="{% url 'category' item %}"> {{ item }} </a>
+               <br/>
+           {%  endfor  %}
+
+         <br/> <hr> </div>
+
 <ul>
 {%  for post in object_list %}
    <h2>  <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a>  </h2>  <small> {{ post.post_date}} </small>  <br/>
 
     {%  if post.header_image  %}
 
-    <img src= "{{ post.header_image.url }}" style="width:560px">
+    <img src= "{{ post.header_image.url }}" style="height:150px; width:150px;
+      -moz-border-radius: 50%; border-radius: 50%; ">
+
     {%  endif %}
         {{ post.snipped | safe}}
         <hr>
