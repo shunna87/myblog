@@ -122,7 +122,9 @@ h4 {
 
 }
 
-.btn-pagination {
+.btn-pagination,
+.btn-pagination:visited
+ {
 
     color: #ffffff;
     font-weight:bolder;
