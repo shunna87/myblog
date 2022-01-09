@@ -4,9 +4,9 @@
 
 <!--<h1> Posts </h1> -->
 
-     <div class="random-q" style="text-align: right;">
+    <!-- <div class="random-q" style="text-align: right;">
        <h3>  Quote of the day: </h3>
-<!--Just testing--->
+
 
             <h1> Այստեղ մի օր կլինի <a href="category/Chengyu/"> Random quote </a> </h1>
            {%  for item in cat_menu_list %}
@@ -15,11 +15,12 @@
                <br/>
            {%  endfor  %}
 
-         <br/> <hr> </div>
+         <br/> <hr> </div> -->
 
-<ul>
+
 {%  for post in object_list %}
-   <h4>  <a href="{% url 'article_detail' post.pk %}"> {{ post.title }}</a>  </h4>  <small> {{ post.post_date}} </small>  <br/>
+<ul class="Post_prev">
+   <h4>   {{ post.title }}  </h4>  <small> {{ post.post_date}} </small>  <br/>
 
     {%  if post.header_image  %}
 
@@ -27,11 +28,11 @@
       -moz-border-radius: 50%; border-radius: 50%; ">
 
     {%  endif %}
-        {{ post.snipped | safe}}
-        <hr>
-
-{% endfor %}
+    {{ post.snipped | safe}}
+    <h5>  <a href="{% url 'article_detail' post.pk %}"> Read more... </a>  </h5>
 </ul>
+{% endfor %}
+
 
  {% if is_paginated %}
  <ul>

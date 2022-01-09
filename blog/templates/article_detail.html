@@ -4,6 +4,7 @@
 
 {%  block content %}
 
+<ul class="Post_prev">
 
 <h1> {{ post.title }} </h1>
 
@@ -12,19 +13,19 @@ Category: <a href ="{% url 'category' post.category  %}" >  {{ post.category }} 
 
 {%  if user.is_authenticated  %}
      <a href ="{% url 'update_post' post.pk %}" class="btn btn-secondary"> Edit post </a>
-     <a href ="{% url 'delete_post' post.pk %}" class="btn btn-outline-danger"> Delete post </a> <br/>
+     <a href ="{% url 'delete_post' post.pk %}" class="btn btn-secondary-red"> Delete post </a> <br/>
      <br/>
 
 {% endif  %}
 
 {%  if post.header_image  %}
 
-      <img src= "{{ post.header_image.url }}">
+      <img src= "{{ post.header_image.url }}" style="max-width:750px">
 {%  endif %}
 {{ post.snipped |safe }}
 {{ post.body | safe }}
 <br/>
 
-<a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
+    <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a> <hr> </ul>
 
 {%  endblock %}
