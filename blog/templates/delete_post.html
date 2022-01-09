@@ -5,9 +5,8 @@
 {%  block content %}
 
 {%  if user.is_authenticated  %}
-<h1> Delete post </h1>
 <br/>
-<h3> Delete: {{ post.title }} </h3>
+<h1> Delete "{{ post.title }}"? </h1>
 <br/>
 <div class ="form-group">
 <form method = "POST">

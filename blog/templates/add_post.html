@@ -3,7 +3,7 @@
 {% block title %} New post {% endblock %}
 
 {%  block content %}
-
+<ul class="Post_prev">
 {%  if user.is_authenticated  %}
 
     <h1> Create a new post </h1>
@@ -16,7 +16,7 @@
        {{ form.media }}
        
        <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
-      <button  class="btn btn-secondary">Save post</button>
+      <button  class="btn btn-secondary">Save post</button> <hr>
 
      <script> 
         var name = "{{ user.id}}";
@@ -27,5 +27,5 @@
 {%  else %}
    You can not add new post
 {% endif %}
-         </div>
+    </div> </ul>
 {%  endblock %}
