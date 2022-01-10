@@ -168,17 +168,17 @@ h4 {
 
 .btn-secondary-red,
 .btn-secondary-red:visited {
-    color: red;
+    color: #ad2e24;
     background: none;
     font-weight:bolder;
-    border-color: red;
+    border-color: #ad2e24;
 }
 
 .btn-secondary-red:hover {
     color: #eee;
     font-weight:bolder;
-    background: red;
-    border-color: #603808;
+    background: #ad2e24;
+    border-color: #ad2e24;
 
 }
 
