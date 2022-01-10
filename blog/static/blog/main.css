@@ -1,18 +1,33 @@
 body {
   background: #e7d9e3;
+  background-image: url("/static/wall.jpg");
+  background-size: cover;
+ 
   margin: 10px;
+<<<<<<< HEAD
   background-image: url("/static/wall.jpg");
   background-size: cover;
   width: 100%;
+=======
+  width: 95%;
+>>>>>>> redesign buttons
 }
 .Post_prev
 {
      background-color: #eee;
+<<<<<<< HEAD
+=======
+     opacity: 0.9;
+>>>>>>> redesign buttons
      box-sizing: border-box;
      opacity: 0.9;
      padding-right: .5rem;
      padding-left: .5rem;
+<<<<<<< HEAD
   
+=======
+     border:3px solid  grey;
+>>>>>>> redesign buttons
      box-sizing: border-box;
      box-shadow:0 1px 1px rgba(0,0,0,0.1);
 }
@@ -24,7 +39,11 @@ body {
 }
 .navbar-expand-lg  {
 
+<<<<<<< HEAD
  
+=======
+  background: none;
+>>>>>>> redesign buttons
   
   display: flex!important;
   margin: 15px;
@@ -40,8 +59,13 @@ body {
 
 .nav-item {
     margin: 0;
+<<<<<<< HEAD
     background: #eee;
     opacity: 0.8;
+=======
+    background: rgb(180, 173, 173);
+    
+>>>>>>> redesign buttons
     font-family: Lobster, Arial, Helvetica, sans-serif;
     max-width: 100%;
     display: block;
@@ -55,7 +79,6 @@ body {
     }
 
              
-
 .dropdown-item
  {
     margin: 0;
@@ -63,7 +86,7 @@ body {
     font-family: Lobster, Arial, Helvetica, sans-serif;
     max-width: 100%;
     
-    background: #e7d9e3;
+    background: rgb(180, 173, 173);
     
     text-transform:uppercase;
     font-weight:bolder;
@@ -129,17 +152,17 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #de76ab;
+    color: #603808;
     background: none;
     font-weight:bolder;
-    border-color: #de76ab;
+    border-color: #603808;
 }
 
 
 .btn btn-secondary-a:hover {
-    color: #d95598;
+    color: #603808;
     font-weight:bolder;
-    border-color: #d95598;
+    border-color: #603808;
 
 }
 
@@ -155,7 +178,7 @@ h4 {
     color: #eee;
     font-weight:bolder;
     background: red;
-    border-color: #d95598;
+    border-color: #603808;
 
 }
 
@@ -165,19 +188,19 @@ h4 {
 
     color: #ffffff;
     font-weight:bolder;
-    border-color: #d95598;
-    background-color: #de76ab;
+    border-color: #603808;
+    background-color: #603808;
 
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #de76ab;
+    background-color: #603808;
 }
 
 .btn btn-outline-info mb-4 {
     color: #FFFFFF;
-    background-color: #de76ab;
+    background-color: #603808;
 }
 
 .btn btn-info mb-4 {
@@ -194,7 +217,7 @@ h4 {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#de76ab;
+  background-color:#603808;
 }
 
 .site-footer
@@ -203,11 +226,30 @@ h4 {
   text-align: center;
   font-size:15px;
   line-height:24px;
+<<<<<<< HEAD
   color:#2c2727;
+=======
+  color:#200f0f;
 }
+
+.site-footer-text
+{
+  
+  text-align: center;
+  font-size:18px;
+  line-height:24px;
+  color: black;
+  -webkit-text-stroke: 0,5 px white;
+>>>>>>> redesign buttons
+}
+
 .site-footer hr
 {
+<<<<<<< HEAD
   border-top-color:rgb(41, 35, 35);
+=======
+  border-top-color: #ffffff;
+>>>>>>> redesign buttons
   text-align: center;
   
 }
@@ -225,7 +267,7 @@ h4 {
 }
 .site-footer a
 {
-  color:#737373;
+  color:#ffffff;
   text-align: center;
 }
 .site-footer a:hover
@@ -271,7 +313,8 @@ h4 {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#de76ab;
+  color: white;
+  background-color:#8b5e34;
 }
 .copyright-text
 {
@@ -314,7 +357,7 @@ h4 {
   text-transform:uppercase;
   align-items:center;
   text-align:center;
-  color:#020d1a;
+  color:white;
   font-weight:700;
   font-size:13px
 }
@@ -337,7 +380,7 @@ h4 {
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
-  background-color:#eb91bf;
+  background-color:#8b5e34;
   align-items:center;
 }
 .social-icons.size-sm a
@@ -361,7 +404,7 @@ h4 {
 }
 .social-icons a.dribbble:hover
 {
-  background-color:#ea4c89
+  background-color:#a47148;
 }
 @media (max-width:767px)
 {

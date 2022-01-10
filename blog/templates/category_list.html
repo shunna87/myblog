@@ -1,12 +1,14 @@
  {%  extends 'base.html' %}
  {% block title %} Categories {% endblock %}
  {%  block content %}
-
+ <ul class="Post_prev">
   <h1> Blog categories: </h1>
        {%  for item in cat_menu_list %}
-
-          <a class="dropdown-item" href="{% url 'category' item %}"> {{ item }} </a>
-       {%  endfor  %}  
-<br/>
-  <a href="{% url 'home' %}" class="btn btn-secondary"> Back to main page</a>
+  
+         <ul> <a  href="{% url 'category' item %}"> {{ item }} </a> </ul>
+       {%  endfor  %}   
+<br/> 
+  <a href="{% url 'home' %}" class="btn btn-secondary"> Back to main page</a> <hr>
+        </ul> 
+ 
  {%  endblock  %}

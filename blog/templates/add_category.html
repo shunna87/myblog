@@ -5,6 +5,7 @@
 {%  block content %}
 
 {%  if user.is_authenticated  %}
+<ul class="Post_prev">
 
     <h1> Create a new category </h1>
     <br/>
@@ -15,11 +16,11 @@
         {{ form.as_p}}
 
       <a href="{% url 'home' %}" class="btn btn-secondary"> Back to main page</a>
-      <button  class="btn btn-secondary">Save</button>
+      <button  class="btn btn-secondary">Save</button> <hr>
 
 
 {%  else %}
    You can not add new category
 {% endif %}
-         </div>
+         </div> </ul> </ul>
 {%  endblock %}
