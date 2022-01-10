@@ -17,11 +17,15 @@
 
          <br/> <hr> </div> -->
 
+<div class="random-q" style="text-align: right;">
+
+ <a href="quotes.html"> Quote of the day </a>
+
+ </div>
 
 {%  for post in object_list %}
-<ul class="Post_prev">
-   <h4>   {{ post.title }}  </h4>  <small> {{ post.post_date}} </small>  <br/>
-
+<div class="Post_prev">
+   <h4>   {{ post.title }}  </h4>  
     {%  if post.header_image  %}
 
     <img src= "{{ post.header_image.url }}" style="height:150px; width:150px;
@@ -30,12 +34,12 @@
     {%  endif %}
     {{ post.snipped | safe}}
     <h5>  <a href="{% url 'article_detail' post.pk %}"> Read more... </a>  </h5>
-  </ul>
+</div>
 {% endfor %}
 
 
  {% if is_paginated %}
- <ul>
+</div>
 
       {% if page_obj.has_previous %}
         <a class="btn btn-secondary" href="?page=1">First</a>

@@ -1,0 +1,20 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony's Random Chinese Proverb Machine</title>
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="quotecontainer">
+    <i class="fa fa-quote-left fa-1x fa-pull-left fa-2x" aria-hidden="true"></i><p class="lead" id="parag"><em>A book is like a garden carried in the pocket.</em><br><br>
+    <i class="pull-right"></i></p>
+    <button onclick="getQuote()" type="button" id="btn-bottom-right" class="btn btn-primary btn-large pull-right">New Quote</button>
+    <button onclick="shareQuote()" type="button" id="btn-bottom-left" class="fa fa-twitter"></button>
+    </div>
+  </body>
+</html>
