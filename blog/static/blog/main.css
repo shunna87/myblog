@@ -4,32 +4,19 @@ body {
   background-size: cover;
  
   margin: 10px;
-<<<<<<< HEAD
-  background-image: url("/static/wall.jpg");
-  background-size: cover;
-  width: 100%;
-=======
   width: 95%;
->>>>>>> redesign buttons
 }
 .Post_prev
 {
      background-color: #eee;
-<<<<<<< HEAD
-=======
-     opacity: 0.9;
->>>>>>> redesign buttons
      box-sizing: border-box;
-     opacity: 0.9;
+     opacity: 0.95;
      padding-right: .5rem;
      padding-left: .5rem;
-<<<<<<< HEAD
-  
-=======
-     border:3px solid  grey;
->>>>>>> redesign buttons
-     box-sizing: border-box;
-     box-shadow:0 1px 1px rgba(0,0,0,0.1);
+     
+     border: 6px solid #eee ;
+     border-radius: 20px;
+     
 }
 
 .post.title
@@ -39,11 +26,7 @@ body {
 }
 .navbar-expand-lg  {
 
-<<<<<<< HEAD
- 
-=======
   background: none;
->>>>>>> redesign buttons
   
   display: flex!important;
   margin: 15px;
@@ -59,13 +42,8 @@ body {
 
 .nav-item {
     margin: 0;
-<<<<<<< HEAD
-    background: #eee;
-    opacity: 0.8;
-=======
     background: rgb(180, 173, 173);
     
->>>>>>> redesign buttons
     font-family: Lobster, Arial, Helvetica, sans-serif;
     max-width: 100%;
     display: block;
@@ -226,9 +204,6 @@ h4 {
   text-align: center;
   font-size:15px;
   line-height:24px;
-<<<<<<< HEAD
-  color:#2c2727;
-=======
   color:#200f0f;
 }
 
@@ -240,16 +215,11 @@ h4 {
   line-height:24px;
   color: black;
   -webkit-text-stroke: 0,5 px white;
->>>>>>> redesign buttons
 }
 
 .site-footer hr
 {
-<<<<<<< HEAD
-  border-top-color:rgb(41, 35, 35);
-=======
   border-top-color: #ffffff;
->>>>>>> redesign buttons
   text-align: center;
   
 }
@@ -416,5 +386,63 @@ h4 {
   }
 }
 
+.fa-quote-left, .fa-quote-right {
+    font-size: 35px;
+    color: rgb(179, 0, 0);
+}
+.quote
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.author 
+{
 
+    margin:10px;
+    text-align: right;
+    font-size: 25px;
+    font-style: italic;
+    font-family: cursive;
+}
+hr {
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+.twitter
+{
+    border:1px solid rgb(102, 179, 255);
+    border-radius: 4px;
+    background-color: rgb(102, 179, 255);
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    width: 60px;
+    height: 35px;
+    line-height: 40px;
+}
+.next
+{
+    font-size:18px;
+    border-radius: 5px;
+    cursor:pointer;
+    padding: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to right bottom, rgb(230, 0, 0), #ffedbca8);
+}
+.container:hover
+{
+    box-shadow: 0 10px 10px rgb(230, 0, 0);
+}
 

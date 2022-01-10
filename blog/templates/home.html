@@ -1,30 +1,32 @@
+<html lang="en">
+
 {%  extends 'base.html' %}
+{% load static %}
 
 {%  block content %}
 
 <!--<h1> Posts </h1> -->
 
-    <!-- <div class="random-q" style="text-align: right;">
-       <h3>  Quote of the day: </h3>
+     <div class="random-q" style="text-align: right;">
+      
+    
+       
+     
+       <div id="quotecontainer">
+        
+        <p class="lead" id="parag"> Quote of the day: <br/> <em> 事实胜于雄辩。 (Shìshí shèng yú xióngbiàn).— Facts beat eloquence. </em><br><br>
+        <i class="pull-left"></i></p>
 
+        <!---
+        <button onclick="getQuote()" type="button" id="btn-bottom-right" class="btn btn-secondary">New Quote</button>
+        --> 
+        </div>
+       
+</div> <br/> <br/> 
 
-            <h1> Այստեղ մի օր կլինի <a href="category/Chengyu/"> Random quote </a> </h1>
-           {%  for item in cat_menu_list %}
-
-              <a  href="{% url 'category' item %}"> {{ item }} </a>
-               <br/>
-           {%  endfor  %}
-
-         <br/> <hr> </div> -->
-
-<div class="random-q" style="text-align: right;">
-
- <a href="quotes.html"> Quote of the day </a>
-
- </div>
 
 {%  for post in object_list %}
-<div class="Post_prev">
+<ul class="Post_prev">
    <h4>   {{ post.title }}  </h4>  
     {%  if post.header_image  %}
 
@@ -34,13 +36,13 @@
     {%  endif %}
     {{ post.snipped | safe}}
     <h5>  <a href="{% url 'article_detail' post.pk %}"> Read more... </a>  </h5>
-</div>
+</ul>
 {% endfor %}
 
 
  {% if is_paginated %}
-</div>
 
+ 
       {% if page_obj.has_previous %}
         <a class="btn btn-secondary" href="?page=1">First</a>
         <a class="btn btn-secondary" href="?page={{ page_obj.previous_page_number }}">Previous</a>
@@ -57,10 +59,12 @@
       {% if page_obj.has_next %}
         <a class="btn btn-secondary" href="?page={{ page_obj.next_page_number }}">Next</a>
         <a class="btn btn-secondary" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-      {% endif %}
+      {% endif %} 
   
-  {% endif %}
+  {% endif %}  
 </ul>
 
 
 {%  endblock %}
+
+</html>

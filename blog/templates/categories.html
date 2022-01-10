@@ -2,6 +2,7 @@
 {% block title %} Category: {{ cats }}  {% endblock %}
 {%  block content %}
 
+<ul class="Post_prev"> 
 {% if category_posts %}
 
 
@@ -22,10 +23,10 @@
 
     {%  else  %}
        <h2> Sorry, there are no articles in this category yet </h2>
-       <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a>
+       <a href="{% url 'home' %}" class="btn btn-secondary"> Back</a> 
          
 
-    {%  endif %}
+    {%  endif %} <hr> </ul>
     
 
 {%  endblock %}
